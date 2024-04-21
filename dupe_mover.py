@@ -47,18 +47,6 @@ def move_duplicates_to_directory(duplicates, dest_directory):
             continue
         shutil.move(duplicate, dest_path)
         print(f"Moved {duplicate} to {dest_path}")
-# def move_duplicates_to_directory(duplicates, dest_directory):
-#     """
-#     Move duplicate files to a destination directory.
-#     """
-#     if not os.path.exists(dest_directory):
-#         os.makedirs(dest_directory)
-
-#     for duplicate in duplicates:
-#         filename = os.path.basename(duplicate)
-#         dest_path = os.path.join(dest_directory, filename)
-#         shutil.move(duplicate, dest_path)
-#         print(f"Moved {duplicate} to {dest_path}")
 
 
 if __name__ == "__main__":
